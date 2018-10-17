@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'd09' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for d09
+	pod 'kvignau2018', :path => '/Users/kvignau/projects/my_swift/d09/kvignau2018'
+end

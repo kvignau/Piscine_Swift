@@ -1,0 +1,16 @@
+PODS:
+  - kvignau2018 (0.1.0)
+
+DEPENDENCIES:
+  - kvignau2018 (from `/Users/kvignau/projects/my_swift/d09/kvignau2018`)
+
+EXTERNAL SOURCES:
+  kvignau2018:
+    :path: "/Users/kvignau/projects/my_swift/d09/kvignau2018"
+
+SPEC CHECKSUMS:
+  kvignau2018: d10e76289734fce0ae9e9ebdd9b24cb9403487d8
+
+PODFILE CHECKSUM: 51e4716573b63e904ebd794deed8a4ca4586ac64
+
+COCOAPODS: 1.5.3

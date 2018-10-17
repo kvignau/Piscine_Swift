@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDA-Lm-XRA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="d07" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repsonse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uT-2f-4M0">
+                                <rect key="frame" x="16" y="310.5" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6T-sH-O5P">
+                                <rect key="frame" x="16" y="350.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WLi-QM-RQO"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAb-DX-nHV">
+                                <rect key="frame" x="169" y="395.5" width="36" height="30"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="snedQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cq-Wf-goB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50473408080612769" green="0.55704686111769408" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c6T-sH-O5P" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5dk-qo-DpE"/>
+                            <constraint firstItem="c6T-sH-O5P" firstAttribute="top" secondItem="9uT-2f-4M0" secondAttribute="bottom" constant="19" id="6CJ-hk-Vb2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9uT-2f-4M0" secondAttribute="trailing" constant="16" id="Hic-jI-7hq"/>
+                            <constraint firstItem="dAb-DX-nHV" firstAttribute="top" secondItem="c6T-sH-O5P" secondAttribute="bottom" constant="15" id="Tg4-Tw-2Yz"/>
+                            <constraint firstItem="c6T-sH-O5P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UrF-Kc-xoQ"/>
+                            <constraint firstItem="9uT-2f-4M0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YmI-yr-nDX"/>
+                            <constraint firstItem="dAb-DX-nHV" firstAttribute="centerX" secondItem="c6T-sH-O5P" secondAttribute="centerX" id="aTB-Ak-QEg"/>
+                            <constraint firstItem="c6T-sH-O5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="b0E-Zq-Qls"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c6T-sH-O5P" secondAttribute="trailing" constant="16" id="v9j-fj-Zi1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weather App" id="oFN-NF-O0W">
+                        <barButtonItem key="rightBarButtonItem" title="JSQMessages" id="BYv-yZ-IVf">
+                            <connections>
+                                <segue destination="FeR-yM-XLr" kind="show" id="z1P-Yi-iAa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionTextField" destination="c6T-sH-O5P" id="dE8-a2-ixO"/>
+                        <outlet property="weatherLabel" destination="9uT-2f-4M0" id="fHr-hR-boG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--JSQ-->
+        <scene sceneID="APV-Vw-xNk">
+            <objects>
+                <viewController id="FeR-yM-XLr" customClass="MassageViewController" customModule="d07" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3kT-mF-AEs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="NsM-oO-RBh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="JSQ" id="FaQ-gb-q16"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUS-9J-aBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aCv-RE-DIf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HDA-Lm-XRA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="duZ-DJ-JSK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w5y-YE-V9p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Y0-9k-urB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="118"/>
+        </scene>
+    </scenes>
+</document>

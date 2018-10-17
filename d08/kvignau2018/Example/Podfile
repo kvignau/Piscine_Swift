@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'kvignau2018_Example' do
+  pod 'kvignau2018', :path => '../'
+
+  target 'kvignau2018_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

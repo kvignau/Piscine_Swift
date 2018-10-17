@@ -1,0 +1,33 @@
+/* Class = "UILabel"; text = "content"; ObjectID = "4TS-aG-pad"; */
+"4TS-aG-pad.text" = "corp de l'article";
+
+/* Class = "UIViewController"; title = "LoginViewController"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "LoginViewController";
+
+/* Class = "UINavigationItem"; title = "Diary"; ObjectID = "FU0-aj-AwJ"; */
+"FU0-aj-AwJ.title" = "Articles";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "OLi-08-dCC"; */
+"OLi-08-dCC.placeholder" = "Titre";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "R5a-Vh-oVq"; */
+"R5a-Vh-oVq.title" = "Sauvegarder";
+
+/* Class = "UIButton"; normalTitle = "Library"; ObjectID = "VLY-Hq-ZRP"; */
+"VLY-Hq-ZRP.normalTitle" = "Photo librairie";
+
+/* Class = "UIButton"; normalTitle = "Camera"; ObjectID = "YE4-iR-QwS"; */
+"YE4-iR-QwS.normalTitle" = "appareil photo";
+
+/* Class = "UILabel"; text = "Authenticate"; ObjectID = "aRd-5S-TLd"; */
+"aRd-5S-TLd.text" = "Authentification";
+
+/* Class = "UINavigationItem"; title = "Add article"; ObjectID = "bOp-e0-LMA"; */
+"bOp-e0-LMA.title" = "Ajouter un article";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "hss-n0-rL3"; */
+"hss-n0-rL3.text" = "titre";
+
+/* Class = "UILabel"; text = "date"; ObjectID = "iEj-nm-yuu"; */
+"iEj-nm-yuu.text" = "date";
+

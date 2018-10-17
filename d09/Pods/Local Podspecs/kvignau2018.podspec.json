@@ -1,0 +1,28 @@
+{
+  "name": "kvignau2018",
+  "version": "0.1.0",
+  "summary": "My perfect pod",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kvignau/kvignau2018",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kvignau": "kvignau@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kvignau/kvignau2018.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.2"
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreData"
+  ],
+  "swift_version": "4.0",
+  "source_files": "Classes/*.swift",
+  "resources": "Classes/article.xcdatamodeld"
+}

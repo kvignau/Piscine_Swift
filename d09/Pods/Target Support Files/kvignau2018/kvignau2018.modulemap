@@ -1,0 +1,6 @@
+framework module kvignau2018 {
+  umbrella header "kvignau2018-umbrella.h"
+
+  export *
+  module * { export * }
+}
